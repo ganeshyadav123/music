@@ -60,19 +60,21 @@ body{
     margin-right:30%;
     
 }
-#hd-telugu1{
+#hd-telugu1,#hd-hindi1,#hd-english1{
     display: flex;
     flex-wrap: wrap;
     color: white;
     border: 1px solid white;
     border-style: solid;
-    background-color: tomato;
+    background-color:darkturquoise;
     justify-content: center;
    
 }
+#hd-hindi1{
+    background-color: green;
+}
 
-
-#telugu{
+#telugu,#hindi,#English{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -80,13 +82,16 @@ body{
     padding: 4rem;
 
 }
+#hd-english1{
+    background-color: darkgoldenrod;
+}
 
 
 .box{
     margin-bottom: 6rem;
     
 }
-#telugu audio {
+#telugu audio ,#hindi audio,#English audio{
     display: none;
 }
 .bttn{
@@ -198,6 +203,170 @@ body{
             </div>
             
         </div>
+        <div id="hd-hindi">
+            <h4 id="hd-hindi1">Hindi Songs</h4>
+        </div>
+
+        <!--Hindi songs-->
+
+        <div id="hindi">
+            <div id="box1" class="box">
+                <img src="telugu photos/[iSongs.info] 07 - Kashmeeru.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="hindi-stranga" controls>
+                        <source src="Hindi songs/02 - Satranga (320 Kbps).mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='play-hindi-stranga' type="button" onclick="audioplay7()" ondblclick="audiopause7()">Play</button>
+                
+            </div>
+            <div id="box1" class="box">
+                <img src="hindi photos/papa.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="hindi-papa" controls>
+                        <source src="Hindi songs/03 - Papa Meri Jaan (320 Kbps).mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='play-hindi-papa' type="button" onclick="audioplay8()" ondblclick="audiopause8()">Play</button>
+                
+            </div>
+            <div id="box1" class="box">
+                <img src="hindi photos/huaa.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="hindi-hua" controls>
+                        <source src="Hindi songs/hua main.mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='playhindi-hua' type="button" onclick="audioplay9()" ondblclick="audiopause9()">Play</button>
+                
+            </div>
+            <div id="box1" class="box">
+                <img src="hindi photos/phele.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="hindi-phele" controls>
+                        <source src="Hindi songs/Pehle Bhi Main Animal 320 Kbps.mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='playsrivalli' type="button" onclick="audioplay10()" ondblclick="audiopause10()">Play</button>
+                
+            </div>
+        </div>
+
+
+        <!--English Songs-->
+
+        <div id="hd-english">
+            <h4 id="hd-english1">English Songs</h4>
+        </div>
+
+
+        <div id="English">
+            <div id="box1" class="box">
+                <img src="English photos/falling.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="english-falling" controls>
+                        <source src="English Songs/Harry_Styles_-_Falling.mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='play-english-falling' type="button" onclick="audioplay11()" ondblclick="audiopause11()">Play</button>
+                
+            </div>
+            <div id="box1" class="box">
+                <img src="English photos/i wanna be yours.png" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="english-wanna" controls>
+                        <source src="English Songs/I-Wanna-Be-Yours(PagalWorld).mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='play-english-wanna' type="button" onclick="audioplay12()" ondblclick="audiopause12()">Play</button>
+                
+            </div>
+            <div id="box1" class="box">
+                <img src="English photos/Infinity - Jaymes Young-(DJMaza).jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="english-infinity" controls>
+                        <source src="English Songs/Infinity - Jaymes Young-(DJMaza).mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='play-english-infinity' type="button" onclick="audioplay13()" ondblclick="audiopause13()">Play</button>
+                
+            </div>
+            <div id="box1" class="box">
+                <img src="English photos/lewis.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="english-lewis" controls>
+                        <source src="English Songs/Lewis Capaldi - Someone You Loved (320kbps).mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='play-english-lewis' type="button" onclick="audioplay14()" ondblclick="audiopause14()">Play</button>
+                
+            </div>
+            <div id="box1" class="box">
+                <img src="English photos/moral.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="english-moral" controls>
+                        <source src="English Songs/Moral-Of-The-Story.mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='play-english-moral' type="button" onclick="audioplay15()" ondblclick="audiopause15()">Play</button>
+                
+            </div>
+            <div id="box1" class="box">
+                <img src="English photos/night changes.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="english-night" controls>
+                        <source src="English Songs/Night-Changes_320(PaglaSongs).mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='play-english-night' type="button" onclick="audioplay16()" ondblclick="audiopause16()">Play</button>
+                
+            </div>
+            <div id="box1" class="box">
+                <img src="English photos/ripidi.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="english-ripidi" controls>
+                        <source src="English Songs/Vance Joy - Riptide [MP3 Free Download] (320kbps).mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='playsrivalli' type="button" onclick="audioplay17()" ondblclick="audiopause17()">Play</button>
+                
+            </div>
+            <div id="box1" class="box">
+                <img src="English photos/summer-time.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="english-summertime" controls>
+                        <source src="English Songs/Summertime-Sadness(PaglaSongs).mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='play-english-summertime' type="button" onclick="audioplay18()" ondblclick="audiopause18()">Play</button>
+                
+            </div>
+        </div>
+
     </main>
 
     <script>
@@ -210,7 +379,21 @@ body{
         const f =document.getElementById("nanna");
         const g =document.getElementById("yaalo");
 
+        //hindi refs
+        const h=document.getElementById("hindi-stranga")
+        const i=document.getElementById("hindi-papa")
+        const j=document.getElementById("hindi-hua")
+        const k=document.getElementById("hindi-phele")
 
+        //hindi songs ref
+        const l=document.getElementById("english-falling")
+        const m=document.getElementById("english-wanna")
+        const n=document.getElementById("english-infinity")
+        const o=document.getElementById("english-lewis")
+        const p=document.getElementById("english-moral")
+        const q=document.getElementById("english-night")
+        const r=document.getElementById("english-ripidi")
+        const s=document.getElementById("english-summertime")
 
 
         //playing section//
@@ -240,13 +423,47 @@ body{
         }
         
 
+        ///hindi controls
+        function audioplay7(){
+            h.play();
+        }
+        function audioplay8(){
+            i.play();
+        }
+        function audioplay9(){
+            j.play();
+        }
+        function audioplay10(){
+            k.play();
+        }
+        
+        
+        //english controls
 
-
-
-
-
-
-
+        function audioplay11(){
+            l.play();
+        }
+        function audioplay12(){
+            m.play();
+        }
+        function audioplay13(){
+            n.play();
+        }
+        function audioplay14(){
+            o.play();
+        }
+        function audioplay15(){
+            p.play();
+        }
+        function audioplay16(){
+            q.play();
+        }
+        function audioplay17(){
+            r.play();
+        }
+        function audioplay18(){
+            s.play();
+        }
 
 
 
@@ -272,7 +489,50 @@ body{
         function audiopause6(){
             g.pause();
         }
-        
+
+
+            //hindi pausing section
+
+        function audiopause7(){
+            h.pause();     
+        }
+        function audiopause8(){
+            i.pause();     
+        }
+        function audiopause9(){
+            j.pause();     
+        }
+        function audiopause10(){
+            k.pause();     
+        }     
+
+        //English pausing section
+
+        function audiopause11(){
+            l.pause();     
+        }
+        function audiopause12(){
+            m.pause();     
+        }
+        function audiopause13(){
+            n.pause();     
+        }
+        function audiopause14(){
+            o.pause();     
+        }
+        function audiopause15(){
+            p.pause();     
+        }
+        function audiopause16(){
+            q.pause();     
+        }
+        function audiopause17(){
+            r.pause();     
+        }
+        function audiopause18(){
+            s.pause();     
+        }       
+
         
     </script>
 
