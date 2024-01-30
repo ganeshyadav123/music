@@ -60,33 +60,45 @@ body{
     margin-right:30%;
     
 }
-#hd-telugu{
+#hd-telugu1{
+    display: flex;
+    flex-wrap: wrap;
     color: white;
+    border: 1px solid white;
+    border-style: solid;
     background-color: tomato;
-    margin-left:1%;
-    margin-right:83%;
-    text-align: center;
+    justify-content: center;
+   
 }
+
 
 #telugu{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem;
+
 }
 
+
+.box{
+    margin-bottom: 6rem;
+    
+}
 #telugu audio {
     display: none;
 }
-#bttn{
+.bttn{
     width:90px;
     height:40px;
     margin-left:30%;
     margin-top:2%;
     color:white;
     background-color: mediumorchid;
+    
 }
+
 
 </style>
 
@@ -101,7 +113,7 @@ body{
                 <li>English Music</li>
             </ul>
             <div id="image">
-                <img src="music.jpg">
+                <img src="telugu photos/music.jpg">
              </div>
              <div id="text">
                 <h6> Music is reset in Sunset</h6>
@@ -111,44 +123,78 @@ body{
 
     <main>
         <div id="hd-telugu">
-            <h4>Telugu Songs</h4>
+            <h4 id="hd-telugu1">Telugu Songs</h4>
         </div>
         <div id="telugu">
-            <div id="box1">
-                <img src="srivalliimage.jpeg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+            <div id="box1" class="box">
+                <img src="telugu photos/srivalliimage.jpeg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
                     <audio id="srivalli" controls>
-                        <source src="srivalli.mp3" type="audio/mp3">
+                        <source src="Telugu songs/srivalli.mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                    
+                </img>
+                
+                <button class="bttn" id='playsrivalli' type="button" onclick="audioplay()" ondblclick="audiopause()">Play</button>
+                
+            </div>
+
+            <div id="box1" class="box">
+                <img src="telugu photos/[iSongs.info] 07 - Kashmeeru.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="kashmeeru" controls>
+                        <source src="Telugu songs/07 - Kashmeeru.mp3" type="audio/mp3">
                         your browser does not support the auido file
                     </audio>
                 </img>
-                <button id="bttn" type="button" onclick="audioplay()" ondblclick="audiopause()">Play</button>
+                <button class="bttn" id='playsrivalli' type="button" onclick="audioplay4()" ondblclick="audiopause4()">Play</button>
             </div>
+
+            <div id="box1" class="box">
+                <img src="telugu photos/[iSongs.info] 03 - Nanna Nuv Naa Pranam.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="nanna" controls>
+                        <source src="Telugu songs/03 - Nanna Nuv Naa Pranam.mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                </img>
+                <button class="bttn" id='playsrivalli' type="button" onclick="audioplay5()" ondblclick="audiopause5()">Play</button>
+            </div>
+
+            <div id="box1" class="box">
+                <img src="telugu photos/[iSongs.info] 07 - Kashmeeru.jpg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;">
+                    <audio id="yaalo" controls>
+                        <source src="Telugu songs/08 - Yaalo Yaalaa.mp3" type="audio/mp3">
+                        your browser does not support the auido file
+                    </audio>
+                </img>
+                <button class="bttn" id='playsrivalli' type="button" onclick="audioplay6()" ondblclick="audiopause6()">Play</button>
+            </div>
+
             
-            <div id="box1">
-                <img src="nenu.jpeg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;"><img/>
+            <div id="box1" class="box">
+                <img src="telugu photos/nenu.jpeg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;"><img/>
                 <audio id="sailu" controls>
-                    <source src="sailu.mp3" type="audio/mp3">
+                    <source src="Telugu songs/sailu.mp3" type="audio/mp3">
                     your browser does not support the auido file
                 </audio>
-                <button id="bttn" type="button" onclick="audioplay1()" ondblclick="audiopause1()">Play</button>
+                <button class="bttn"  id='playsailu' type="button" onclick="audioplay1()" ondblclick="audiopause1()">Play</button>
             </div>
             
-            <div id="box2">
-                <img src="dj.jpeg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;"><img/>
+            <div id="box2" class="box">
+                <img src="telugu photos/dj.jpeg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;"><img/>
                 <audio id="dj" controls>
-                    <source src="dj.mp3" type="audio/mp3">
+                    <source src="Telugu songs/dj.mp3" type="audio/mp3">
                     your browser does not support the auido file
                 </audio>
-                <button id="bttn" type="button" onclick="audioplay2()" ondblclick="audiopause2()">Play</button>
+                <button class="bttn" id='playdj' type="button" onclick="audioplay2()" ondblclick="audiopause2()">Play</button>
             </div>
             
-            <div id="box3">
-                <img src="baby.jpeg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;"><img/>
+            <div id="box3" class="box">
+                <img src="telugu photos/baby.jpeg" style="height: 200px; width:250px; margin-left:5%; border:2px green; padding:6px; border-style:solid;"><img/>
                 <audio id="baby" controls>
-                    <source src="baby (1).mp3" type="audio/mp3">
+                    <source src="Telugu songs/baby (1).mp3" type="audio/mp3">
                     your browser does not support the auido file
                 </audio>
-                <button id="bttn" type="button" onclick="audioplay3()" ondblclick="audiopause3()">Play</button>
+                <button class="bttn" id='playbaby' type="button" onclick="audioplay3" ondblclick="audiopause3()">Play</button>
             </div>
             
         </div>
@@ -156,38 +202,77 @@ body{
 
     <script>
 
-        var P =document.getElementById("srivalli");
-        var q =document.getElementById("sailu");
-        var r =document.getElementById("dj");
-        var s =document.getElementById("baby");
+        const a =document.getElementById("srivalli");
+        const b =document.getElementById("sailu");
+        const c =document.getElementById("dj");
+        const d =document.getElementById("baby");
+        const e =document.getElementById("kashmeeru");
+        const f =document.getElementById("nanna");
+        const g =document.getElementById("yaalo");
+
+
+
+
         //playing section//
+       
+
         function audioplay() {
-            P.play();
+            a.play();
         }
 
         function audioplay1(){
-            q.play();
+            b.play();
         }
         function audioplay2(){
-            r.play();
+            c.play();
         }
         function audioplay3(){
-            s.play();
+            d.play();
+        }
+        function audioplay4(){
+            e.play();
+        }
+        function audioplay5(){
+            f.play();
+        }
+        function audioplay6(){
+            g.play();
         }
         
+
+
+
+
+
+
+
+
+
+
+
         //pausing section//
         function audiopause(){
-            P.pause();
+            a.pause();
         }
         function audiopause1(){
-            q.pause();
+            b.pause();
         }
         function audiopause2(){
-            r.pause();
+            c.pause();
         }
         function audiopause3(){
-            s.pause();
+            d.pause();
         }
+        function audiopause4(){
+            e.pause();
+        }
+        function audiopause5(){
+            f.pause();
+        }
+        function audiopause6(){
+            g.pause();
+        }
+        
         
     </script>
 
